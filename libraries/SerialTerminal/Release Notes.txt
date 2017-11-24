@@ -1,0 +1,17 @@
+Arduino Hardware Serial Terminal
+2017 SMFSW
+
+Feel free to share your thoughts @ xgarmanboziax@gmail.com about:
+	- issues encountered
+	- optimisations
+	- improvements & new functionalities
+
+------------
+
+** Actual:
+
+v1.1	12 Jul 2017:
+- compliance with Arduino v1.5+ IDE source located in src subfolder
+
+v1.0	25 March 2017:
+- First release
