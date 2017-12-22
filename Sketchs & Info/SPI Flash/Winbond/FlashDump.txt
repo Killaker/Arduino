@@ -1,0 +1,28 @@
+PUT spi_flash_programmer_client.py in C:\ or in a path you have python3 installed.
+You need PYSERIAL installed with python3.
+
+RUN Command Prompt and CD to dir you have copied the script.
+ENTER below commands.
+
+
+READ:
+
+py spi_flash_programmer_client.py -d COM8 -f dump.bin -s 4096 read
+
+WRITE:
+
+py spi_flash_programmer_client.py -d COM8 -f dump.bin --flash-offset 0 write
+
+VERIFY:
+
+py spi_flash_programmer_client.py -d COM8 -f dump.bin --flash-offset 0 --file-offset 0 verify
+
+
+
+ARGS:
+
+-d = DEVICE COM PORT                                  Ex: COM8
+-f = FILE FOR WRITE,TO DUMP                           Ex: dump.bin
+-s = FLASH SIZE IN KILOBYTES                          Ex: 4096
+--flash-offset = FLASH OFFSET TO START READ/WRITE     Ex: 0
+--file-offset  = FILE OFFSET TO START READ/WRITE      Ex: 0
